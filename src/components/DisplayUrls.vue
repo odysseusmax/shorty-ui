@@ -21,7 +21,7 @@ export default {
   props : ["shortUrls"],
   data(){
     return {
-        currentUrl : window.location.host
+        currentUrl : window.location.origin
     }
   },
   methods:{
@@ -36,6 +36,9 @@ export default {
     clear(code){
         this.$emit('clear', code)
     }
+  },
+  mounted(){
+    console.log(window.location);
   }
 };
 </script>
