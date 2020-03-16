@@ -6,6 +6,7 @@
         <a :href="shortUrl.url" class="m-2 p-2 text-center text-gray-600 w-full"> {{shortUrl.url}} </a>
         <br/>
         <router-link :to="'/'+shortUrl.code" class="m-4 p-2 text-center text-red-500"> {{currentUrl}}/{{shortUrl.code}}</router-link>
+        <br/>
         <button class="p-3 m-2 text-red-600 hover:bg-red-600 hover:text-white border-2 border-solid border-red-600 rounded-md" @click="copyClipboard(shortUrl.code)"> Copy</button>
         <button class="p-3 m-2 text-red-600 hover:bg-red-600 hover:text-white border-2 border-solid border-red-600 rounded-md" @click="clear(shortUrl.code)"> Clear!</button>
     </div>
