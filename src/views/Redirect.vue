@@ -6,6 +6,9 @@
         <br/>
         <router-link to="/" class="bg-indigo-500 hover:bg-blue-400 p-5 rounded-md font-bold"> Go Home </router-link>
     </div>
+    <div v-else>
+        <h1 class="text-5xl m-4">You will be redirected shortly..</h1>
+    </div>
   </div>
 </template>
 
